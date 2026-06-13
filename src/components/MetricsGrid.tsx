@@ -1,9 +1,9 @@
 export default function MetricsGrid() {
   const metrics = [
-    { value: '✅', label: 'Code review: GO behaald' },
-    { value: '4', label: 'Fasen doorlopen' },
-    { value: 'POC', label: 'Volledig functionerend opgeleverd' },
-    { value: '↺', label: 'Bewuste bijsturing in week 5' },
+    { value: '✅', label: 'Code review: GO — 18 mei 2026' },
+    { value: '432', label: 'Uur solo gewerkt' },
+    { value: '7', label: 'Sprints voltooid' },
+    { value: '22', label: 'xUnit-tests geschreven' },
   ];
   return (
     <div className="metrics-grid">
