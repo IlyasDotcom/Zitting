@@ -6,7 +6,15 @@ import TestMatrix from './TestMatrix';
 import FeedbackCards from './FeedbackCards';
 import ReflectionCards from './ReflectionCards';
 import MetricsGrid from './MetricsGrid';
-import QASection from './QASection';
+import Leeruitkomsten from './Leeruitkomsten';
+import MisgingKlikte from './MisgingKlikte';
+import BijsturenOnderDruk from './BijsturenOnderDruk';
+import DagelijksToepassen from './DagelijksToepassen';
+import LevenLangLeren from './LevenLangLeren';
+import SecurityVisual from './SecurityVisual';
+import RealiserenVisual from './RealiserenVisual';
+import PlannenVisual from './PlannenVisual';
+import ProgrammerenVisual from './ProgrammerenVisual';
 
 interface Props {
   slide: SlideType;
@@ -22,18 +30,25 @@ function VisualPanel({ type }: { type: SlideType['visual']['type'] }) {
     case 'feedbackcards': return <FeedbackCards />;
     case 'reflectioncards': return <ReflectionCards />;
     case 'metrics': return <MetricsGrid />;
-    case 'qa': return <QASection />;
+    case 'leeruitkomsten': return <Leeruitkomsten />;
+    case 'misging': return <MisgingKlikte />;
+    case 'bijsturen': return <BijsturenOnderDruk />;
+    case 'dagelijkstoepassen': return <DagelijksToepassen />;
+    case 'levenlangleren': return <LevenLangLeren />;
+    case 'security': return <SecurityVisual />;
+    case 'realiseren': return <RealiserenVisual />;
+    case 'plannen': return <PlannenVisual />;
+    case 'programmeren': return <ProgrammerenVisual />;
     default: return null;
   }
 }
 
+const FULL_VISUAL_IDS = new Set(['leeruitkomsten', 'misging', 'bijsturen', 'dagelijks', 'levenlangleren']);
+
 function IntroSlide() {
   return (
     <div className="intro-slide">
-      <div className="intro-slide__badge">
-        <span>🏛️</span>
-        Afstudeerverdediging {PRESENTER.year}
-      </div>
+      <div className="intro-slide__badge"><span>🏙️</span>Afstudeerverdediging {PRESENTER.year}</div>
       <div className="intro-slide__logo-ring">🏢</div>
       <div>
         <h1 className="intro-slide__title">KvK <span>Bedrijventeller</span></h1>
@@ -50,48 +65,45 @@ function IntroSlide() {
 }
 
 export default function Slide({ slide, direction }: Props) {
+  const cls = `slide ${direction === 'backward' ? 'slide-enter-left' : ''}`;
   const isIntro = slide.id === 'intro';
+  const isFullVisual = FULL_VISUAL_IDS.has(slide.id);
   const hasVisual = slide.visual.type !== 'none';
-  const isFullVisual = slide.id === 'qa';
 
-  if (isIntro) {
-    return (
-      <div className={`slide ${direction === 'backward' ? 'slide-enter-left' : ''}`}>
-        <IntroSlide />
-      </div>
-    );
-  }
+  if (isIntro) return <div className={cls}><IntroSlide /></div>;
 
   if (isFullVisual) {
     return (
-      <div className={`slide ${direction === 'backward' ? 'slide-enter-left' : ''}`}>
+      <div className={cls}>
         <div className="slide__section-tag">{slide.section}</div>
         <h2 className="slide__title">{slide.title}</h2>
         {slide.subtitle && <p className="slide__subtitle">{slide.subtitle}</p>}
-        <div style={{ flex: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-          <QASection />
+        <div style={{ flex: 1, overflow: 'auto' }}>
+          <VisualPanel type={slide.visual.type} />
         </div>
       </div>
     );
   }
 
   return (
-    <div className={`slide ${direction === 'backward' ? 'slide-enter-left' : ''}`}>
+    <div className={cls}>
       <div className="slide__section-tag">{slide.section}</div>
       <h2 className="slide__title">{slide.title}</h2>
       {slide.subtitle && <p className="slide__subtitle">{slide.subtitle}</p>}
       <div className={`slide__body ${hasVisual ? 'slide__body--with-visual' : ''}`}>
-        <div className="slide__points">
-          {slide.points.map((point, i) => (
-            <div key={i} className="point-card">
-              {point.icon && <span className="point-card__icon">{point.icon}</span>}
-              <div className="point-card__content">
-                <div className="point-card__label">{point.label}</div>
-                {point.detail && <div className="point-card__detail">{point.detail}</div>}
+        {slide.points.length > 0 && (
+          <div className="slide__points">
+            {slide.points.map((point, i) => (
+              <div key={i} className="point-card">
+                {point.icon && <span className="point-card__icon">{point.icon}</span>}
+                <div className="point-card__content">
+                  <div className="point-card__label">{point.label}</div>
+                  {point.detail && <div className="point-card__detail">{point.detail}</div>}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
         {hasVisual && (
           <div style={{ overflow: 'auto' }}>
             <VisualPanel type={slide.visual.type} />
