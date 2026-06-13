@@ -1,0 +1,60 @@
+:root {
+  --petrol-base: #00526e;
+  --petrol-dark: #003d52;
+  --petrol-darker: #002a3a;
+  --petrol-light: #1a7a96;
+  --petrol-lighter: #e8f4f8;
+  --petrol-lightest: #f0f8fb;
+
+  --purple-base: #aa418c;
+  --purple-dark: #883370;
+  --purple-darker: #6f2a5b;
+  --purple-light: #c4609f;
+  --purple-lighter: #f4edf4;
+  --purple-lightest: #fdf5fb;
+
+  --ink: #10263b;
+  --ink-secondary: #3d5467;
+  --ink-muted: #6b7f8e;
+  --ink-subtle: #9eb0bb;
+
+  --surface: #ffffff;
+  --surface-alt: #f5f8fa;
+  --surface-card: #ffffff;
+  --border: #d8e5ea;
+  --border-subtle: #eaf1f4;
+
+  --success: #1a7a4a;
+  --warning: #b5730a;
+  --pivot: #7b3fa0;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 82, 110, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 82, 110, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 82, 110, 0.16);
+
+  --font-mono: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background: var(--ink);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { height: 100%; }
+
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+::selection { background: rgba(0, 82, 110, 0.2); color: var(--petrol-darker); }
+
+:focus-visible { outline: 2px solid var(--petrol-base); outline-offset: 2px; }
