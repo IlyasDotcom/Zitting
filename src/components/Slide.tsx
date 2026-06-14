@@ -44,7 +44,7 @@ function VisualPanel({ type }: { type: SlideType['visual']['type'] }) {
 }
 
 // Slides where the visual takes the full body (no left-side points)
-const FULL_VISUAL_IDS = new Set(['leeruitkomsten', 'misging', 'bijsturen', 'dagelijks', 'levenlangleren']);
+const FULL_VISUAL_IDS = new Set(['leeruitkomsten', 'misging', 'bijsturen', 'levenlangleren']);
 
 function IntroSlide() {
   return (

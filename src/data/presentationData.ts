@@ -141,12 +141,7 @@ export const SLIDES: Slide[] = [
     section: 'Security',
     title: 'Security',
     subtitle: '',
-    points: [
-      { icon: '🔒', label: 'Inputvalidatie', detail: 'Geen onveilige invoer mogelijk. Rate limiting toegepast.' },
-      { icon: '🔑', label: 'Security headers', detail: 'Geconfigureerd via Nginx. Secrets in omgevingsvariabelen.' },
-      { icon: '🔐', label: 'Alleen tellingen, geen bedrijfsrecords', detail: 'Bewust beperkt om privacy te waarborgen.' },
-      { icon: '🌱', label: 'Wat ik meeneem', detail: 'Security meenemen vanaf het begin, niet achteraf.' },
-    ],
+    points: [],
     speakerNotes: 'Security heb ik bewust meegenomen op een niveau dat past bij een POC. Inputvalidatie, rate limiting, security headers en privacy by design. Wat ik meeneem: security is geen sluitstuk maar iets om vanaf het begin mee te nemen.',
     visual: { type: 'security' },
     defenseImportance: 'Security toont professionele volwassenheid.',
@@ -228,19 +223,7 @@ export const SLIDES: Slide[] = [
     defenseImportance: 'Resultaat als bewijs van groei.',
   },
 
-  // 12 ─ DAGELIJKS TOEPASSEN
-  {
-    id: 'dagelijks',
-    section: 'Dagelijks toepassen',
-    title: 'Hoe ik dit nu dagelijks toepas',
-    subtitle: '',
-    points: [],
-    speakerNotes: 'Dit zijn geen losse stage-ervaringen, dit zijn gewoontes geworden. Ik plan kleiner. Ik bouw uitlegbaar. Ik denk vanaf het begin na over kwaliteit en privacy. Ik vraag eerder om hulp. En ik haal feedback actief op.',
-    visual: { type: 'dagelijkstoepassen' },
-    defenseImportance: 'Toont dat leeropbrengsten duurzaam zijn.',
-  },
-
-  // 13 ─ LEVEN LANG LEREN
+  // 12 ─ LEVEN LANG LEREN
   {
     id: 'levenlangleren',
     section: 'Leven lang leren',
@@ -252,7 +235,7 @@ export const SLIDES: Slide[] = [
     defenseImportance: 'Leeruitkomst 5. Sterk afsluiten met de rode draad.',
   },
 
-  // 14 ─ VRAGEN
+  // 13 ─ VRAGEN
   {
     id: 'vragen',
     section: 'Vragen',
