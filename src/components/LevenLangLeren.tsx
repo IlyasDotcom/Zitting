@@ -1,42 +1,43 @@
 export default function LevenLangLeren() {
-  const points = [
-    { icon: '📋', body: 'Ik plan realistischer en stuur eerder bij.' },
-    { icon: '🏗️', body: 'Ik bouw uitlegbaar en ben eerlijk over wat nog niet af is.' },
-    { icon: '🛡️', body: 'Ik denk vanaf het begin na over security en privacy.' },
-    { icon: '🔄', body: 'Ik haal actief feedback op en zet het om in acties.' },
-    { icon: '📈', body: 'Volgende stap: sterker worden in backend, testen en betrouwbare software.' },
+  const tiles = [
+    { icon: '📅', title: 'Plannen', body: 'Kleinere taken. Vooraf inschatten wat ik onderschat.' },
+    { icon: '🏗️', title: 'Kwaliteit', body: 'Uitlegbaar bouwen. Eerlijk zijn over wat nog niet af is.' },
+    { icon: '🛡️', title: 'Security', body: 'Vanaf het ontwerp meedenken over risico’s en privacy.' },
+    { icon: '🗣️', title: 'Communicatie', body: 'Eerst zelf proberen, dan gericht vragen.' },
+    { icon: '🔄', title: 'Feedback', body: 'Actief ophalen en vertalen naar een concrete actie.' },
+    { icon: '📈', title: 'Volgende stap', body: 'Sterker worden in backend, testen en betrouwbare software.' },
   ];
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', height: '100%' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%' }}>
       <div style={{
-        padding: '20px 24px', borderRadius: 'var(--radius-md)',
+        padding: '16px 20px', borderRadius: 'var(--radius-md)',
         background: 'linear-gradient(135deg, var(--petrol-base), var(--petrol-darker))',
         color: '#fff', boxShadow: 'var(--shadow-md)',
         animation: 'cardIn 0.3s both',
       }}>
-        <p style={{ fontSize: 'clamp(15px, 2vw, 19px)', fontWeight: 700, lineHeight: 1.35 }}>
+        <p style={{ fontSize: 'clamp(13px, 1.8vw, 17px)', fontWeight: 700, lineHeight: 1.35, margin: 0 }}>
           "Deze stage heeft mij niet alleen leren programmeren, maar leren werken."
         </p>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', flex: 1 }}>
-        {points.map((p, i) => (
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', flex: 1 }}>
+        {tiles.map((tile, i) => (
           <div key={i} style={{
-            display: 'flex', gap: '14px', alignItems: 'flex-start',
-            padding: '12px 16px', borderRadius: 'var(--radius-md)',
+            padding: '14px 16px', borderRadius: 'var(--radius-md)',
             background: 'var(--surface-card)', border: '1px solid var(--border)',
             boxShadow: 'var(--shadow-sm)',
-            animation: 'cardIn 0.3s both', animationDelay: `${(i + 1) * 0.07}s`,
+            animation: 'cardIn 0.3s both', animationDelay: `${(i + 1) * 0.06}s`,
           }}>
-            <span style={{ fontSize: '18px', flexShrink: 0 }}>{p.icon}</span>
-            <span style={{ fontSize: '13px', color: 'var(--ink-secondary)', lineHeight: 1.6 }}>{p.body}</span>
+            <div style={{ fontSize: '20px', marginBottom: '6px' }}>{tile.icon}</div>
+            <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--ink)', marginBottom: '4px' }}>{tile.title}</div>
+            <div style={{ fontSize: '11.5px', color: 'var(--ink-secondary)', lineHeight: 1.55 }}>{tile.body}</div>
           </div>
         ))}
       </div>
 
       <div style={{
-        padding: '14px 20px', borderRadius: 'var(--radius-md)',
+        padding: '12px 18px', borderRadius: 'var(--radius-md)',
         background: 'var(--purple-lighter)', border: '1px solid var(--border)',
         borderLeft: '4px solid var(--purple-base)',
         fontSize: '13px', fontWeight: 700, color: 'var(--purple-darker)',
