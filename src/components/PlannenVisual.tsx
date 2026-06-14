@@ -2,7 +2,7 @@ import { TIMELINE_ITEMS } from '../data/presentationData';
 
 export default function PlannenVisual() {
   return (
-    <div style={{ overflowY: 'auto' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '0', height: '100%', overflowY: 'auto' }}>
       <div className="timeline">
         {TIMELINE_ITEMS.map((item, i) => (
           <div key={i} className={`timeline-item timeline-item--${item.status}`}>
@@ -19,6 +19,9 @@ export default function PlannenVisual() {
             </div>
           </div>
         ))}
+      </div>
+      <div style={{ marginTop: '10px', fontSize: '11px', color: 'var(--ink-subtle)', fontStyle: 'italic', paddingLeft: '2px' }}>
+        Overdrachtsdocument gemaakt op basis van PvA en projectdocumentatie.
       </div>
     </div>
   );

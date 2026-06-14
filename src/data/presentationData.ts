@@ -71,210 +71,197 @@ export const SLIDES: Slide[] = [
     id: 'opdracht',
     section: 'De opdracht',
     title: 'De opdracht',
-    subtitle: 'Validatie, niet productie — dit is de enige slide over het product',
+    subtitle: '',
     points: [
-      { icon: '🔍', label: 'Het probleem', detail: 'Bedrijventeller telt op SBI-branchecode en gebied — te grof. "Hoeveel Italiaanse restaurants in Rotterdam?" was onmogelijk.' },
+      { icon: '🔍', label: 'Het probleem', detail: 'Bedrijventeller telt op SBI-branchecode en gebied. "Hoeveel Italiaanse restaurants in Rotterdam?" was onmogelijk.' },
       { icon: '🎯', label: 'Mijn opdracht', detail: 'Valideren of zoeken op trefwoorden de Bedrijventeller specifieker maakt. POC, geen productiesysteem.' },
       { icon: '📐', label: 'Onderzoeksvraag', detail: 'In hoeverre maakt het toevoegen van trefwoordzoeken de Bedrijventeller specifieker voor zakelijke gebruikers?' },
       { icon: '📊', label: 'Opgeleverd', detail: 'Solo, 432 uur, 7 sprints, full-stack POC (React · ASP.NET Core 8 · SQL Server · Docker). Code review: GO.' },
     ],
-    speakerNotes: 'Even kort de context. KVK Innovatielab valideert ideeën met een proof of concept voordat een IT-team ze bouwt. Mijn opdracht: onderzoeken of zoeken op trefwoorden de Bedrijventeller specifieker maakt. De bestaande tool telt op SBI-branchecode en gebied — te grof voor vragen als hoeveel Italiaanse restaurants zijn er in Rotterdam. Ik bouwde daarvoor solo een werkende full-stack POC in 432 uur, zeven sprints, met een code review die op GO eindigde. Dit is de enige slide over het product. Vanaf nu gaat het over hoe de stage verliep en wat ik leerde.',
+    speakerNotes: 'Even kort de context. KVK Innovatielab valideert ideeën met een proof of concept voordat een IT-team ze bouwt. Mijn opdracht: onderzoeken of zoeken op trefwoorden de Bedrijventeller specifieker maakt. Ik bouwde daarvoor solo een werkende full-stack POC in 432 uur, zeven sprints, met een code review die op GO eindigde.',
     visual: { type: 'none' },
     defenseImportance: 'Snel en helder de context neerzetten. Daarna draaien naar het proces.',
   },
 
-  // 3 ─ LEERUITKOMSTEN
-  {
-    id: 'leeruitkomsten',
-    section: 'Leeruitkomsten',
-    title: 'Vijf leeruitkomsten — mijn kapstok',
-    subtitle: 'Geen compensatie mogelijk · Elke uitkomst moet op zichzelf voldoende zijn',
-    points: [],
-    speakerNotes: 'Dit is mijn kapstok. Vijf leeruitkomsten, geen compensatie mogelijk. Elke leeruitkomst moet op zichzelf voldoende zijn. Ik loop ze één voor één langs en laat telkens zien wat ik concreet deed en hoe ik dat nu meeneem. De vijfde, een leven lang leren, is mijn rode draad en komt door alles heen terug.',
-    visual: { type: 'leeruitkomsten' },
-    defenseImportance: 'Laat zien dat je de beoordelingsstructuur begrijpt. Dit geeft het assessmentgesprek richting.',
-  },
-
-  // 4 ─ PLANNEN
+  // 3 ─ PLANNEN
   {
     id: 'plannen',
     section: 'Plannen',
     title: 'Plannen van aanpassingen',
-    subtitle: 'Leeruitkomst 2 — solo werken met structuur',
+    subtitle: '',
     points: [
-      { icon: '📅', label: '7 sprints, lichte Scrum', detail: 'Donderdagmeeting = sprint review + planning. Volledig Scrum paste niet bij solo werken.' },
-      { icon: '✅', label: 'Eigen Definition of Done', detail: 'Klaar = lokaal werkend · gecommit · uitlegbaar · randgevallen gecheckt · toonbaar.' },
-      { icon: '📉', label: 'Wat ik leerde', detail: 'Ik onderschatte structureel infrastructuur en tests. Vanaf sprint 4: kleiner plannen, tests gebundeld in aparte sprint.' },
-      { icon: '🏆', label: 'Sprint 5–7 volledig gehaald', detail: 'Na bijsturing werden sprintdoelen consequent gerealiseerd.' },
-      { icon: '📋', label: 'Overdrachtspunten voor productie', detail: 'Release-plan, service window en privacy-review gedocumenteerd en besproken met Ben Schuttenbeld en Waseem Sadiq. Dit valt buiten de POC-scope maar is bewust benoemd zodat KVK verantwoord kan doorontwikkelen.' },
-      { icon: '👤', label: 'Solo-context en Scrum', detail: 'Scrum-principes toegepast zonder volledig team. Iteraties, eigen backlog en retro-momenten, met begeleiders als aanspreekpunt voor scope en kwaliteit.' },
+      { icon: '📅', label: '7 sprints, lichte Scrum', detail: 'Elke donderdag: sprint review en planning tegelijk.' },
+      { icon: '✅', label: 'Wanneer was iets klaar?', detail: 'Lokaal werkend, gecommit en uitlegbaar.' },
+      { icon: '📉', label: 'Wat ik leerde', detail: 'Ik onderschatte infrastructuur en tests. Vanaf sprint 4: kleiner plannen.' },
+      { icon: '🏆', label: 'Sprint 5–7 volledig gehaald', detail: 'Na bijsturing werden sprintdoelen consequent gehaald.' },
+      { icon: '📋', label: 'Overdracht gedocumenteerd', detail: 'Release-plan en aandachtspunten vastgelegd voor doorontwikkeling.' },
+      { icon: '👤', label: 'Solo-context en Scrum', detail: 'Scrum-principes toegepast zonder volledig team, met begeleiders als aanspreekpunt.' },
     ],
-    speakerNotes: 'Ik werkte solo, dus volledige Scrum paste niet. Ik koos een lichte variant: zeven sprints, waarbij de donderdagmeeting tegelijk sprint review en planning was. Ik hanteerde een eigen Definition of Done: klaar als de functionaliteit lokaal werkte, gecommit was, uitlegbaar was, randgevallen gecheckt waren en het toonbaar was. Per sprint vergeleek ik gepland met gerealiseerd. Wat ik leerde: ik onderschatte structureel infrastructuur en tests. Vanaf sprint vier plande ik kleiner en bundelde ik tests in een aparte sprint. De sprintdoelen van sprint vijf tot zeven haalde ik volledig.',
+    speakerNotes: 'Ik werkte solo, dus volledige Scrum paste niet. Ik koos een lichte variant: zeven sprints, waarbij de donderdagmeeting tegelijk sprint review en planning was. Ik hanteerde een eigen definitie van klaar: lokaal werkend, gecommit en uitlegbaar. Wat ik leerde: ik onderschatte structureel infrastructuur en tests. Vanaf sprint vier plande ik kleiner. De sprintdoelen van sprint vijf tot zeven haalde ik volledig.',
     visual: { type: 'plannen' },
     defenseImportance: 'Leeruitkomst 2 expliciet tonen. Bijsturing is hier het bewijs van groei.',
   },
 
-  // 5 ─ PROGRAMMEREN
+  // 4 ─ PROGRAMMEREN
   {
     id: 'programmeren',
     section: 'Programmeren',
     title: 'Programmeren',
-    subtitle: 'Leeruitkomst 1 — uitlegbaar bouwen',
+    subtitle: '',
     points: [
-      { icon: '🏗️', label: 'Controller-Service-Repository', detail: 'Eigen architectuurkeuze voor uitlegbaarheid en testbaarheid.' },
-      { icon: '⚙️', label: 'Koppeling met KVK-database', detail: 'Kolomnamen weken af van C#-conventies — geconfigureerd via Fluent API.' },
-      { icon: '🔗', label: 'Eén samengestelde query', detail: 'Branche + gebied + tekst + actief-status gecombineerd. Boomstructuur-algoritme en debounce-logica zelf bedacht.' },
-      { icon: '📖', label: 'Wat ik meeneem', detail: 'Eerst uitlegbaar bouwen. Nieuwe techniek verifiëren in officiële documentatie, niet blind via AI of Stack Overflow.' },
+      { icon: '🏗️', label: 'Controller-Service-Repository', detail: 'Gekozen voor een duidelijke structuur die ik kon uitleggen en testen.' },
+      { icon: '⚙️', label: 'Koppeling met KVK-database', detail: 'De standaard naamgeving week af van de database. Zelf geconfigureerd.' },
+      { icon: '🔗', label: 'Eén zoekopdracht', detail: 'Branche, gebied, tekst en actief-status worden in een query gecombineerd.' },
+      { icon: '📖', label: 'Wat ik meeneem', detail: 'Eerst uitlegbaar bouwen. Nieuwe techniek verifiëren via officiële documentatie.' },
     ],
-    speakerNotes: 'Ik koos zelf mijn stack en architectuur met een controller-service-repository-structuur, zodat de code uitlegbaar en testbaar werd. De koppeling met de bestaande KVK-database was niet triviaal: de kolomnamen weken af van de C-sharp-conventie, dus ik configureerde die via de Fluent API. Het hart: ik combineer in één query branche, gebied, tekst en de actief-status. Ik heb ook een boomstructuur-algoritme en debounce-logica zelf bedacht. Wat ik meeneem: ik bouw eerst uitlegbaar en verifieer nieuwe techniek in de officiële documentatie, niet blind via AI of Stack Overflow.',
+    speakerNotes: 'Ik koos zelf mijn architectuur met een controller-service-repository-structuur, zodat de code uitlegbaar en testbaar werd. De koppeling met de KVK-database vergde wat configuratiewerk. Het hart van de applicatie: één query die branche, gebied, tekst en actief-status combineert. Wat ik meeneem: uitlegbaar bouwen en nieuwe techniek verifiëren in officiële documentatie.',
     visual: { type: 'programmeren' },
-    defenseImportance: 'Leeruitkomst 1. Toon concrete keuzes en zelfstandig redeneren — niet alle code, maar de sleutelkeuzes.',
+    defenseImportance: 'Leeruitkomst 1. Toon concrete keuzes en zelfstandig redeneren.',
   },
 
-  // 6 ─ TESTING
+  // 5 ─ TESTING
   {
     id: 'testing',
     section: 'Testing',
     title: 'Testing en validatie',
-    subtitle: 'Leeruitkomst 1 — eerlijk testen',
+    subtitle: '',
     points: [
-      { icon: '🧪', label: '22 xUnit-tests, 3 testklassen', detail: 'Unieke databasenaam per test voor isolatie. Happy én unhappy paths.' },
-      { icon: '✅', label: 'Unhappy paths getest', detail: 'Lege filterset, onbekende SBI-code, ongeldige operator.' },
-      { icon: '⚠️', label: '3 bewuste skips (eerlijk gedocumenteerd)', detail: 'Full-text search werkt niet in de in-memory provider. Bewust op skip gezet, handmatig gevalideerd via SQL Server en Swagger.' },
-      { icon: '🌱', label: 'Wat ik meeneem', detail: 'Eerlijk benoemen van een testbeperking is professioneler dan forceren. Dat is de houding die ik vasthoudt.' },
+      { icon: '🧪', label: '22 xUnit-tests', detail: '19 groen, 3 bewust op skip.' },
+      { icon: '⚠️', label: '3 skips', detail: 'Full Text Search werkt niet met EF Core InMemory. Handmatig gevalideerd via SQL Server, Swagger en frontend.' },
+      { icon: '🌱', label: 'Wat ik meeneem', detail: 'Eerlijk benoemen wat niet werkt is professioneler dan forceren.' },
     ],
-    speakerNotes: 'Ik schreef 22 xUnit-tests over drie testklassen met een unieke databasenaam per test voor isolatie. Ik testte niet alleen happy paths maar ook unhappy: lege filterset, onbekende SBI-code, ongeldige operator. De drie skips zijn de trefwoordtests die full text search nodig hebben — dat ondersteunt de in-memory provider niet. Ik heb dat bewust gedocumenteerd in plaats van te forceren, en handmatig gevalideerd via SQL Server en Swagger. Eerlijk benoemen van een testbeperking is precies de houding die ik wil vasthouden.',
+    speakerNotes: 'Ik schreef 22 xUnit-tests. 19 groen, 3 bewust op skip. De skips zijn de trefwoordtests die Full Text Search nodig hebben. Dat werkt niet in de InMemory-provider. Ik heb het gedocumenteerd en handmatig gevalideerd via SQL Server, Swagger en de frontend. Eerlijk benoemen van een beperking is professioneler dan forceren.',
     visual: { type: 'testmatrix' },
-    defenseImportance: 'Eerlijkheid over beperkingen is sterker dan alles groen kleuren. Dit is professioneel gedrag.',
+    defenseImportance: 'Eerlijkheid over beperkingen is sterker dan alles groen kleuren.',
   },
 
-  // 7 ─ SECURITY
+  // 6 ─ SECURITY
   {
     id: 'security',
     section: 'Security',
     title: 'Security',
-    subtitle: 'Leeruitkomst 3 — vanaf het ontwerp, niet als sluitstuk',
+    subtitle: '',
     points: [
-      { icon: '🛡️', label: 'OWASP Top 10 als kader', detail: 'Gericht A03 Injection en A05 Misconfiguration aangepakt.' },
-      { icon: '🔒', label: 'Inputvalidatie + parameterized LINQ', detail: 'Geen string-concatenatie. Rate limiting: 100 verzoeken per 60 seconden. Request body-limiet.' },
-      { icon: '🔑', label: 'Configuratie & headers', detail: 'Secrets in omgevingsvariabelen. CORS beperkt tot frontend-URL. Security headers + CSP via Nginx. Global exception handler — geen stack traces naar gebruiker.' },
-      { icon: '🔐', label: 'Privacy by design', detail: 'Alleen tellingen tonen, geen bedrijfsrecords. Beperkt indirecte herleidbaarheid van personen.' },
+      { icon: '🔒', label: 'Inputvalidatie', detail: 'Geen onveilige invoer mogelijk. Rate limiting toegepast.' },
+      { icon: '🔑', label: 'Security headers', detail: 'Geconfigureerd via Nginx. Secrets in omgevingsvariabelen.' },
+      { icon: '🔐', label: 'Alleen tellingen, geen bedrijfsrecords', detail: 'Bewust beperkt om privacy te waarborgen.' },
+      { icon: '🌱', label: 'Wat ik meeneem', detail: 'Security meenemen vanaf het begin, niet achteraf.' },
     ],
-    speakerNotes: 'Security heb ik bewust meegenomen op een niveau dat past bij een POC. Ik gebruikte de OWASP Top 10 als kader en pakte gericht injection en misconfiguration aan. Wat ik meeneem: security is geen sluitstuk maar iets om vanaf het ontwerp mee te nemen, en ik denk altijd na over de privacy-impact van wat ik toon.',
+    speakerNotes: 'Security heb ik bewust meegenomen op een niveau dat past bij een POC. Inputvalidatie, rate limiting, security headers en privacy by design. Wat ik meeneem: security is geen sluitstuk maar iets om vanaf het begin mee te nemen.',
     visual: { type: 'security' },
-    defenseImportance: 'Security toont professioneel volwassenheid. Privacy-bewustzijn is extra sterk gegeven de KVK-context.',
+    defenseImportance: 'Security toont professionele volwassenheid.',
   },
 
-  // 8 ─ REALISEREN
+  // 7 ─ REALISEREN
   {
     id: 'realiseren',
     section: 'Realiseren',
     title: 'Realiseren en integreren',
-    subtitle: 'Leeruitkomst 3 — één commando, reproduceerbaar, en eigen werk herzien',
+    subtitle: '',
     points: [
-      { icon: '🐳', label: 'Docker — één commando', detail: 'Frontend, backend en database draaien geïntegreerd. Healthcheck: backend start pas als database klaar is.' },
-      { icon: '🔄', label: 'Auto-migrate + configureerbare backend-URL', detail: 'Reproduceerbare omgeving. Niet "werkt op mijn machine" maar overal.' },
-      { icon: '✏️', label: 'Eigen werk kritisch herzien', detail: 'Refactoring HeroSearch-component. Overstap naar kaarten per gebied na feedback van gebruikers.' },
-      { icon: '🌱', label: 'Wat ik meeneem', detail: 'Reproduceerbare omgeving is een kwaliteitseis. Usability telt. Eigen werk durven herzien is geen zwakte.' },
+      { icon: '🐳', label: 'Frontend, backend en database via Docker', detail: 'Alles draait samen met één commando.' },
+      { icon: '🔗', label: 'Hoe het werkt', detail: 'React stuurt filters naar de API. Backend valideert en telt via SQL Server. Resultaat komt terug als telling per gebied.' },
+      { icon: '✏️', label: 'Eigen werk herzien', detail: 'Na feedback component opgesplitst en resultaten per gebied getoond.' },
+      { icon: '🌱', label: 'Wat ik meeneem', detail: 'Eigen werk durven herzien is geen zwakte.' },
     ],
-    speakerNotes: 'Frontend, backend en database draaien geïntegreerd in Docker met één commando. Ik gebruikte een healthcheck zodat de backend pas start als de database klaar is, en auto-migrate plus een configureerbare backend-URL zodat de omgeving reproduceerbaar is — niet werkt op mijn machine. Ik heb mijn eigen werk ook kritisch beoordeeld en verbeterd: ik refactorde HeroSearch en stapte na feedback over op kaarten per gebied.',
+    speakerNotes: 'Frontend, backend en database draaien samen via Docker met één commando. React stuurt filters naar de API, de backend valideert en telt via SQL Server en geeft het resultaat terug als telling per gebied. Ik heb ook mijn eigen werk herzien: na feedback een component opgesplitst en resultaten per gebied getoond.',
     visual: { type: 'realiseren' },
-    defenseImportance: 'Leeruitkomst 3. Concrete technische integratie én eigen kritisch vermogen tonen.',
+    defenseImportance: 'Leeruitkomst 3. Concrete integratie en kritisch vermogen.',
   },
 
-  // 9 ─ COMMUNICATIE
+  // 8 ─ COMMUNICATIE
   {
     id: 'communicatie',
     section: 'Communicatie',
     title: 'Samenwerken en communiceren',
-    subtitle: 'Leeruitkomst 4 — taal aanpassen per publiek',
+    subtitle: '',
     points: [
-      { icon: '📆', label: 'Donderdagmeeting — vaste ankerpunten', detail: 'Wekelijks met Ben Schuttenbeld en Waseem Sadiq: feedback, scope en technische richting.' },
-      { icon: '👥', label: 'Technische sparring', detail: 'Michiel (backend), Willem (database), Erwin & Jeroen (tooling). Ceyhun: samenwerking woordenlijst met duidelijke taakverdeling.' },
-      { icon: '🗣️', label: 'Taal aanpassen per publiek', detail: 'Met developers: architectuur en queries. Met business users Ruud en Margreet: zoekflow zonder jargon.' },
-      { icon: '📋', label: 'Stakeholders', detail: 'KVK Innovatielab (Ben, Waseem), Hogeschool Rotterdam (Tjidde Maijer), business users (Ruud, Margreet), technisch team (Michiel, Willem, Erwin, Jeroen, Ceyhun).' },
-      { icon: '🔄', label: 'Solo-context en Scrum in teamverband', detail: 'Scrum-principes toegepast in een solo-context. Iteraties, backlog en retro-momenten. Begeleiders functioneerden als proxy voor het team bij scope, kwaliteit en prioritering.' },
+      { icon: '📆', label: 'Wekelijkse afstemming met begeleiders', detail: 'Feedback, scope en richting besproken elke donderdag.' },
+      { icon: '👥', label: 'Technische sparring met collega\'s', detail: 'Over backend, database en tooling.' },
+      { icon: '🗣️', label: 'Demo\'s met business users', detail: 'Na elke demo feedback verwerkt in het product.' },
+      { icon: '💬', label: 'Uitleg aangepast per doelgroep', detail: 'Met developers technisch, met business users zonder jargon.' },
+      { icon: '🔄', label: 'Solo-context en Scrum', detail: 'Begeleiders als aanspreekpunt voor scope en kwaliteit.' },
     ],
-    speakerNotes: 'Hoewel ik solo werkte was communiceren cruciaal. De donderdagmeeting met Ben en Waseem was mijn vaste moment voor feedback en scope. Ik haalde technische richting op bij seniors: Michiel over de backend, Willem over de database, Erwin en Jeroen over tooling. Met Ceyhun werkte ik samen aan de woordenlijst met een duidelijke taakverdeling. Het belangrijkste: ik paste mijn taal aan per publiek. Met developers sprak ik over architectuur, met business users Ruud en Margreet over de zoekflow zonder jargon.',
+    speakerNotes: 'Hoewel ik solo werkte was communiceren cruciaal. Wekelijkse afstemming met begeleiders, technische sparring met collega\'s en demo\'s met business users. Het belangrijkste: ik paste mijn uitleg aan per doelgroep. Met developers technisch, met business users zonder jargon.',
     visual: { type: 'feedbackcards' },
     defenseImportance: 'Leeruitkomst 4. Taal aanpassen per publiek is concreet en sterk bewijs.',
   },
 
-  // 10 ─ MISGING / KLIKTE
+  // 9 ─ MISGING / KLIKTE
   {
     id: 'misging',
     section: 'Toen het misging',
     title: 'Toen het misging — en toen het klikte',
     subtitle: 'Twee momenten die me het meest hebben geleerd',
     points: [],
-    speakerNotes: 'Twee momenten die me het meest hebben geleerd. Links liep ik drie dagen vast op de EF Core-koppeling, mijn valkuil te lang zelf blijven zoeken. Ik doorbrak het door te stoppen, het schema uit te tekenen en het aan Waseem voor te leggen, de volgende dag opgelost. Rechts was ik onzeker bij Ceyhun omdat mijn bestanden groot waren, mijn valkuil perfectionisme. Ceyhun zei: in een POC mag een groter bestand als je je keuzes kunt uitleggen. Kantelpunt. Allebei leerden me hetzelfde: eerder schakelen en realistisch zijn over goed genoeg.',
+    speakerNotes: 'Twee momenten die me het meest hebben geleerd. Ik liep drie dagen vast op de databasekoppeling. Mijn valkuil: te lang zelf blijven zoeken. Ik doorbrak het door te stoppen, het schema uit te tekenen en het voor te leggen. De volgende dag opgelost. Het tweede moment: onzeker bij een collega omdat mijn bestanden groot waren. Hij zei: in een POC mag dat, als je je keuzes kunt uitleggen. Kantelpunt. Allebei leerden me hetzelfde: eerder schakelen en realistisch zijn over goed genoeg.',
     visual: { type: 'misging' },
-    defenseImportance: 'Toont reflectievermogen en zelfinzicht. Concrete verhalen zijn veel sterker dan abstracte lessen.',
+    defenseImportance: 'Toont reflectievermogen en zelfinzicht.',
   },
 
-  // 11 ─ BIJSTUREN ONDER DRUK
+  // 10 ─ BIJSTUREN ONDER DRUK
   {
     id: 'bijsturen',
     section: 'Bijsturen',
     title: 'Bijsturen onder druk',
-    subtitle: 'Leeruitkomst 2 — druk was geen uitzondering maar een gegeven',
+    subtitle: '',
     points: [],
-    speakerNotes: 'Druk was geen uitzondering maar een gegeven. In week zes en zeven kwamen nieuwe wensen terwijl ik midden in de trefwoordenlogica zat. Ik gebruikte een prioriteitenmatrix en maakte de grens bespreekbaar in de donderdagmeeting: eerst kern af, dan extra\'s. In week elf was ik bang dat ik mijn keuzes niet helder kon uitleggen. Ik maakte praatblokken, schreef mogelijke vragen op en stemde af met Ben en Waseem. Wat ik leerde: bij druk helpt het mij niet harder te werken, maar te structureren en mijn uitleg voor te bereiden.',
+    speakerNotes: 'Druk was geen uitzondering maar een gegeven. In week zes en zeven kwamen nieuwe wensen terwijl ik midden in de kernfunctionaliteit zat. Ik maakte een prioriteitenlijst en bracht het bespreekbaar: eerst kern af, dan extra\'s. Later was ik bang dat ik mijn keuzes niet goed genoeg kon uitleggen. Ik maakte praatblokken en bereidde me voor. Dat hielp. Wat ik leerde: bij druk helpt het niet harder werken, maar structureren.',
     visual: { type: 'bijsturen' },
-    defenseImportance: 'Leeruitkomst 2 in actie. Concrete situaties met aanpak en effect zijn het sterkste bewijs.',
+    defenseImportance: 'Leeruitkomst 2 in actie.',
   },
 
-  // 12 ─ RESULTAAT
+  // 11 ─ RESULTAAT
   {
     id: 'resultaat',
     section: 'Resultaat',
-    title: 'Resultaat — bewijs dat het proces werkte',
-    subtitle: 'Niet het hoofdpunt, maar het bewijs',
+    title: 'Resultaat',
+    subtitle: '',
     points: [
-      { icon: '✅', label: 'Code review: GO', detail: '18 mei 2026 · Beoordelend docent: Tjidde Maijer · Technische kwaliteit extern gevalideerd.' },
+      { icon: '✅', label: 'Code review: GO', detail: '18 mei 2026 · Tjidde Maijer' },
       { icon: '💬', label: 'Waardering opdrachtgever', detail: '"Er kwam een werkend product uit dat er professioneel uitziet en absoluut waardevol is voor KVK." — Ben Schuttenbeld' },
-      { icon: '🚀', label: 'Werkende POC', detail: 'React frontend · ASP.NET Core 8 API · SQL Server · Docker · AND/OR trefwoordlogica · resultaten per gebied.' },
-      { icon: '📦', label: 'Overdraagbaar', detail: 'Gedocumenteerde architectuur en follow-up punten voor het productieteam.' },
+      { icon: '🚀', label: 'Werkende POC', detail: 'React · ASP.NET Core 8 · SQL Server · Docker · AND/OR trefwoordlogica · resultaten per gebied.' },
+      { icon: '📦', label: 'Overdraagbaar', detail: 'Gedocumenteerde architectuur en aandachtspunten voor het productieteam.' },
     ],
-    speakerNotes: 'Het eindresultaat: een werkende POC met een GO bij de code review op 18 mei 2026 van beoordelend docent Tjidde Maijer. Ben Schuttenbeld schreef in zijn waardering: er kwam een werkend product uit dat er professioneel uitziet en absoluut waardevol is voor KVK. Dit is niet het hoofdpunt van mijn verhaal, maar het bewijs dat het proces werkte.',
+    speakerNotes: 'Het eindresultaat: een werkende POC met een GO bij de code review. Ben Schuttenbeld schreef: er kwam een werkend product uit dat er professioneel uitziet en absoluut waardevol is voor KVK. Dit is het bewijs dat het proces werkte.',
     visual: { type: 'metrics' },
-    defenseImportance: 'Resultaat als bewijs van groei — niet als productdemo. Koppel terug naar het proces.',
+    defenseImportance: 'Resultaat als bewijs van groei.',
   },
 
-  // 13 ─ DAGELIJKS TOEPASSEN
+  // 12 ─ DAGELIJKS TOEPASSEN
   {
     id: 'dagelijks',
     section: 'Dagelijks toepassen',
     title: 'Hoe ik dit nu dagelijks toepas',
-    subtitle: 'Geen losse stage-ervaringen — dit zijn gewoontes geworden',
+    subtitle: '',
     points: [],
-    speakerNotes: 'Dit zijn geen losse stage-ervaringen, dit zijn gewoontes geworden. Ik plan kleiner en check vooraf wat ik onderschat. Ik bouw uitlegbaar en ben eerlijk over wat nog niet af is. Ik denk vanaf het ontwerp na over security en privacy. Ik probeer eerst zelf en vraag dan gericht. Ik haal feedback actief op en vertaal het naar een actie. En ik beoordeel mijn voortgang eerlijk, ook door te zien wat al werkt.',
+    speakerNotes: 'Dit zijn geen losse stage-ervaringen, dit zijn gewoontes geworden. Ik plan kleiner. Ik bouw uitlegbaar. Ik denk vanaf het begin na over kwaliteit en privacy. Ik vraag eerder om hulp. En ik haal feedback actief op.',
     visual: { type: 'dagelijkstoepassen' },
-    defenseImportance: 'Toont dat leeropbrengsten duurzaam zijn — niet eenmalig. Cruciaal voor "leven lang leren".',
+    defenseImportance: 'Toont dat leeropbrengsten duurzaam zijn.',
   },
 
-  // 14 ─ LEVEN LANG LEREN
+  // 13 ─ LEVEN LANG LEREN
   {
     id: 'levenlangleren',
     section: 'Leven lang leren',
     title: 'Leven lang leren — mijn rode draad',
     subtitle: 'Leeruitkomst 5',
     points: [],
-    speakerNotes: 'Als ik alles samenvat in één rode draad: deze stage heeft mij niet alleen leren programmeren, maar leren werken. Ik zie in mijn vakgebied een duidelijke trend: van LIKE naar full text search naar semantisch en vector-zoeken. Die laatste stap zou de woordvariant-uitdaging voor KVK oplossen. Ik blijf bronnen verifiëren, feedback actief zoeken ook na oplevering, en mijn leerpunten omzetten in concrete werkafspraken. Dat neem ik mee, elke dag en in elk volgend project.',
+    speakerNotes: 'Als ik alles samenvat in één rode draad: deze stage heeft mij niet alleen leren programmeren, maar leren werken. Ik blijf bronnen verifiëren, feedback actief zoeken en mijn leerpunten omzetten in concrete stappen. Dat neem ik mee, elke dag en in elk volgend project.',
     visual: { type: 'levenlangleren' },
-    defenseImportance: 'Slotslide vóór de vragen. Sterk afsluiten met de rode draad. Leeruitkomst 5 expliciet.',
+    defenseImportance: 'Leeruitkomst 5. Sterk afsluiten met de rode draad.',
   },
 
-  // 15 ─ VRAGEN
+  // 14 ─ VRAGEN
   {
     id: 'vragen',
     section: 'Vragen',
     title: 'Vragen',
-    subtitle: 'Ik sta klaar voor het gesprek',
+    subtitle: '',
     points: [],
-    speakerNotes: 'Ik sta klaar voor uw vragen. Gebruik deze slide als rustige ankerplek tijdens het gesprek.',
+    speakerNotes: 'Ik sta klaar voor uw vragen.',
     visual: { type: 'none' },
-    defenseImportance: 'Rustige afsluiter. Geeft beoordelaars een overzicht van mogelijke gespreksrichtingen.',
+    defenseImportance: 'Rustige afsluiter.',
   },
 ];
 
@@ -292,21 +279,21 @@ export const TIMELINE_ITEMS = [
     phase: 'Sprint 3–4',
     label: 'Bouwen — kernfunctionaliteit',
     weeks: 'Week 4–6',
-    items: ['EF Core-koppeling (3 dagen geblokkeerd → doorbraak)', 'Filterlogica branche + gebied', 'Trefwoordlogica AND/OR'],
+    items: ['Databasekoppeling (3 dagen geblokkeerd, doorbraak)', 'Filterlogica branche + gebied', 'Trefwoordlogica AND/OR'],
     status: 'done' as const,
   },
   {
     phase: '↺ Bijsturing',
     label: 'Scope-druk aangepakt',
     weeks: 'Week 6–7',
-    items: ['Nieuwe wensen terwijl kern nog af moest', 'Prioriteitenmatrix opgesteld', 'Grens bespreekbaar gemaakt in donderdagmeeting'],
+    items: ['Nieuwe wensen terwijl kern nog af moest', 'Prioriteitenlijst opgesteld', 'Grens bespreekbaar gemaakt in donderdagmeeting'],
     status: 'pivot' as const,
   },
   {
     phase: 'Sprint 5–6',
     label: 'Kwaliteitsborging',
     weeks: 'Week 7–10',
-    items: ['22 xUnit-tests (3 klassen)', 'Security: OWASP, rate limiting, headers', 'Refactoring HeroSearch', 'Kaarten per gebied na feedback'],
+    items: ['22 xUnit-tests (19 groen, 3 skip)', 'Security: inputvalidatie, rate limiting, headers', 'Component opgesplitst', 'Resultaten per gebied na feedback'],
     status: 'done' as const,
   },
   {
@@ -325,7 +312,7 @@ export const TEST_MATRIX = [
   { area: 'Lege filterset', type: 'Functioneel (unhappy)', method: 'xUnit', result: '✅ Werkt', notes: 'Geeft volledige telling terug' },
   { area: 'Onbekende SBI-code', type: 'Functioneel (unhappy)', method: 'xUnit', result: '✅ Werkt', notes: 'Geeft 0 terug, geen fout' },
   { area: 'Ongeldige operator', type: 'Functioneel (unhappy)', method: 'xUnit', result: '✅ Werkt', notes: 'Fout netjes afgevangen' },
-  { area: 'Trefwoord-tests (3x)', type: 'Technisch', method: 'xUnit – skip', result: '⚠️ Skip', notes: 'In-memory provider ondersteunt full-text niet. Bewust gedocumenteerd. Handmatig gevalideerd via SQL Server + Swagger.' },
+  { area: 'Trefwoord-tests (3x)', type: 'Technisch', method: 'xUnit – skip', result: '⚠️ Skip', notes: 'Full Text Search werkt niet met EF Core InMemory. Handmatig gevalideerd via SQL Server, Swagger en frontend.' },
   { area: 'API – count endpoint', type: 'Technisch', method: 'xUnit', result: '✅ Werkt', notes: 'Correcte HTTP-statuscode en responsstructuur' },
   { area: 'Code review', type: 'Extern', method: 'Code review sessie', result: '✅ GO', notes: '18 mei 2026 · Tjidde Maijer' },
 ];
@@ -334,31 +321,31 @@ export const QA_ITEMS = [
   {
     category: 'Technisch',
     question: 'Waarom ASP.NET Core 8 en niet Node.js of Python?',
-    answer: 'ASP.NET Core sluit aan bij de KVK-technische omgeving en het interne team. Het biedt sterke typing, goede performance en uitstekende SQL Server-integratie. De overdracht aan het productieteam wordt daarmee eenvoudiger.',
+    answer: 'ASP.NET Core sluit aan bij de KVK-technische omgeving en het interne team. Het biedt sterke typing, goede performance en uitstekende SQL Server-integratie.',
   },
   {
     category: 'Technisch',
     question: 'Hoe werkt de AND/OR-logica precies?',
-    answer: 'De gebruiker voert keywords in als tags. Bij AND zoekt de backend naar bedrijven die álle keywords bevatten in omschrijving of handelsnaam. Bij OR minstens één. Dit vertaalt zich naar een SQL-query met CONTAINS en logische operatoren op de full-text search-index.',
+    answer: 'Bij AND zoekt de backend naar bedrijven die alle keywords bevatten. Bij OR minstens één. Dit vertaalt zich naar een SQL-query op de Full Text Search-index.',
   },
   {
     category: 'Plannen',
     question: 'Waarom heb je in week 5–7 bijgestuurd?',
-    answer: 'Er kwamen nieuwe wensen terwijl de kernfunctionaliteit nog af moest. Ik stelde een prioriteitenmatrix op en maakte in de donderdagmeeting de grens bespreekbaar: eerst kern af, dan extra\'s. Dat was een proactieve keuze, geen reactie op mislukking.',
+    answer: 'Er kwamen nieuwe wensen terwijl de kernfunctionaliteit nog af moest. Ik stelde een prioriteitenlijst op en maakte de grens bespreekbaar: eerst kern af, dan extra\'s.',
   },
   {
     category: 'Reflectie',
     question: 'Wat is het belangrijkste dat je hebt geleerd?',
-    answer: 'Eerder schakelen en realistisch zijn over goed genoeg. Ik neigde te lang zelf te zoeken en te perfectionistisch te zijn. De EF Core-blokkade en de demo bij Ceyhun leerden me allebei hetzelfde: stop, structureer, vraag gericht.',
+    answer: 'Eerder schakelen en realistisch zijn over goed genoeg. Ik neigde te lang zelf te zoeken. Stop, structureer, vraag gericht.',
   },
   {
     category: 'Testing',
     question: 'Waarom staan er drie skips in je testsuit?',
-    answer: 'De in-memory provider van EF Core ondersteunt full-text search niet. Forceren zou misleidend zijn. Ik heb het bewust gedocumenteerd als skip en handmatig gevalideerd via SQL Server en Swagger. Eerlijk benoemen van een beperking is professioneler dan alles groen kleuren.',
+    answer: 'Full Text Search werkt niet met EF Core InMemory. Ik heb het gedocumenteerd als skip en handmatig gevalideerd via SQL Server, Swagger en de frontend.',
   },
   {
     category: 'Security',
     question: 'Waarom toon je alleen tellingen en geen bedrijfsrecords?',
-    answer: 'Privacy by design. Bedrijfsrecords kunnen indirect personen identificeren, zeker bij kleine gebieden of niches. Alleen tellingen tonen beperkt die herleidbaarheid en past bij het doel van de Bedrijventeller.',
+    answer: 'Privacy by design. Bedrijfsrecords kunnen indirect personen identificeren. Alleen tellingen tonen beperkt die herleidbaarheid.',
   },
 ];
