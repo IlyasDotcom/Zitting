@@ -43,15 +43,21 @@ function VisualPanel({ type }: { type: SlideType['visual']['type'] }) {
   }
 }
 
+// Slides where the visual takes the full body (no left-side points)
 const FULL_VISUAL_IDS = new Set(['leeruitkomsten', 'misging', 'bijsturen', 'dagelijks', 'levenlangleren']);
 
 function IntroSlide() {
   return (
     <div className="intro-slide">
-      <div className="intro-slide__badge"><span>🏙️</span>Afstudeerverdediging {PRESENTER.year}</div>
+      <div className="intro-slide__badge">
+        <span>🏗️</span>
+        Afstudeerverdediging {PRESENTER.year}
+      </div>
       <div className="intro-slide__logo-ring">🏢</div>
       <div>
-        <h1 className="intro-slide__title">KvK <span>Bedrijventeller</span></h1>
+        <h1 className="intro-slide__title">
+          KvK <span>Bedrijventeller</span>
+        </h1>
         <p className="intro-slide__project">Keyword Search — Proof of Concept</p>
       </div>
       <div className="intro-slide__meta">
@@ -67,10 +73,23 @@ function IntroSlide() {
 export default function Slide({ slide, direction }: Props) {
   const cls = `slide ${direction === 'backward' ? 'slide-enter-left' : ''}`;
   const isIntro = slide.id === 'intro';
+  const isVragen = slide.id === 'vragen';
   const isFullVisual = FULL_VISUAL_IDS.has(slide.id);
   const hasVisual = slide.visual.type !== 'none';
 
-  if (isIntro) return <div className={cls}><IntroSlide /></div>;
+  if (isIntro) {
+    return <div className={cls}><IntroSlide /></div>;
+  }
+
+  if (isVragen) {
+    return (
+      <div className={cls} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <h1 style={{ fontSize: 'clamp(64px, 10vw, 112px)', fontWeight: 800, color: 'var(--petrol-base)', letterSpacing: '-2px', margin: 0 }}>
+          Vragen?
+        </h1>
+      </div>
+    );
+  }
 
   if (isFullVisual) {
     return (
@@ -90,6 +109,7 @@ export default function Slide({ slide, direction }: Props) {
       <div className="slide__section-tag">{slide.section}</div>
       <h2 className="slide__title">{slide.title}</h2>
       {slide.subtitle && <p className="slide__subtitle">{slide.subtitle}</p>}
+
       <div className={`slide__body ${hasVisual ? 'slide__body--with-visual' : ''}`}>
         {slide.points.length > 0 && (
           <div className="slide__points">

@@ -4,12 +4,11 @@ export default function LevenLangLeren() {
     { icon: '🏗️', body: 'Ik bouw uitlegbaar en ben eerlijk over wat nog niet af is.' },
     { icon: '🛡️', body: 'Ik denk vanaf het begin na over security en privacy.' },
     { icon: '🔄', body: 'Ik haal actief feedback op en zet het om in acties.' },
-    { icon: '📈', body: 'Ik volg trends van LIKE naar full text search naar semantisch/vector zoeken. Gebaseerd op Microsoft-documentatie over full text search en publicaties over vector-zoeken zoals Azure Cognitive Search en OpenAI embeddings. Dit lost de woordvariant-uitdaging (kapper vs barber) op en is een concrete volgende stap voor KVK.' },
+    { icon: '📈', body: 'Volgende stap: sterker worden in backend, testen en betrouwbare software.' },
   ];
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', height: '100%' }}>
-      {/* Opening */}
       <div style={{
         padding: '20px 24px', borderRadius: 'var(--radius-md)',
         background: 'linear-gradient(135deg, var(--petrol-base), var(--petrol-darker))',
@@ -21,7 +20,6 @@ export default function LevenLangLeren() {
         </p>
       </div>
 
-      {/* Points */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', flex: 1 }}>
         {points.map((p, i) => (
           <div key={i} style={{
@@ -37,7 +35,6 @@ export default function LevenLangLeren() {
         ))}
       </div>
 
-      {/* Afsluiter */}
       <div style={{
         padding: '14px 20px', borderRadius: 'var(--radius-md)',
         background: 'var(--purple-lighter)', border: '1px solid var(--border)',
