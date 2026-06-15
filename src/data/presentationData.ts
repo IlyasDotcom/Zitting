@@ -147,24 +147,7 @@ export const SLIDES: Slide[] = [
     defenseImportance: 'Security toont professionele volwassenheid.',
   },
 
-  // 7 ─ REALISEREN
-  {
-    id: 'realiseren',
-    section: 'Realiseren',
-    title: 'Realiseren en integreren',
-    subtitle: '',
-    points: [
-      { icon: '🐳', label: 'Frontend, backend en database via Docker', detail: 'Alles draait samen met één commando.' },
-      { icon: '🔗', label: 'Hoe het werkt', detail: 'React stuurt filters naar de API. Backend valideert en telt via SQL Server. Resultaat komt terug als telling per gebied.' },
-      { icon: '✏️', label: 'Eigen werk herzien', detail: 'Na feedback component opgesplitst en resultaten per gebied getoond.' },
-      { icon: '🌱', label: 'Wat ik meeneem', detail: 'Eigen werk durven herzien is geen zwakte.' },
-    ],
-    speakerNotes: 'Frontend, backend en database draaien samen via Docker met één commando. React stuurt filters naar de API, de backend valideert en telt via SQL Server en geeft het resultaat terug als telling per gebied. Ik heb ook mijn eigen werk herzien: na feedback een component opgesplitst en resultaten per gebied getoond.',
-    visual: { type: 'realiseren' },
-    defenseImportance: 'Leeruitkomst 3. Concrete integratie en kritisch vermogen.',
-  },
-
-  // 8 ─ COMMUNICATIE
+  // 7 ─ COMMUNICATIE
   {
     id: 'communicatie',
     section: 'Communicatie',
@@ -182,7 +165,7 @@ export const SLIDES: Slide[] = [
     defenseImportance: 'Leeruitkomst 4. Taal aanpassen per publiek is concreet en sterk bewijs.',
   },
 
-  // 9 ─ MISGING / KLIKTE
+  // 8 ─ MISGING / KLIKTE
   {
     id: 'misging',
     section: 'Toen het misging',
@@ -194,19 +177,19 @@ export const SLIDES: Slide[] = [
     defenseImportance: 'Toont reflectievermogen en zelfinzicht.',
   },
 
-  // 10 ─ BIJSTUREN ONDER DRUK
+  // 9 ─ BIJSTUREN ONDER DRUK
   {
     id: 'bijsturen',
     section: 'Bijsturen',
     title: 'Bijsturen onder druk',
     subtitle: '',
     points: [],
-    speakerNotes: 'Druk was geen uitzondering maar een gegeven. In week zes en zeven kwamen nieuwe wensen terwijl ik midden in de kernfunctionaliteit zat. Ik maakte een prioriteitenlijst en bracht het bespreekbaar: eerst kern af, dan extra\'s. Later was ik bang dat ik mijn keuzes niet goed genoeg kon uitleggen. Ik maakte praatblokken en bereidde me voor. Dat hielp. Wat ik leerde: bij druk helpt het niet harder werken, maar structureren.',
+    speakerNotes: 'Druk was geen uitzondering maar een gegeven. In week zes en zeven kwamen nieuwe wensen terwijl ik midden in de kernfunctionaliteit zat. Ik maakte een prioriteitenlijst en bracht het bespreekbaar: eerst kern af, dan extra\'s. Later was ik bang dat ik mijn keuzes niet goed kon uitleggen. Ik maakte praatblokken en bereidde me voor. Dat hielp. Ik heb ook mijn eigen werk kritisch bekeken: het HeroSearch-component was te groot geworden. Ik heb het opgesplitst en na feedback van gebruikers resultaten per gebied getoond. Eigen werk durven herzien hoort ook bij bijsturen.',
     visual: { type: 'bijsturen' },
-    defenseImportance: 'Leeruitkomst 2 in actie.',
+    defenseImportance: 'Leeruitkomst 2 in actie. Concrete situaties met aanpak en effect zijn het sterkste bewijs.',
   },
 
-  // 11 ─ RESULTAAT
+  // 10 ─ RESULTAAT
   {
     id: 'resultaat',
     section: 'Resultaat',
@@ -223,7 +206,7 @@ export const SLIDES: Slide[] = [
     defenseImportance: 'Resultaat als bewijs van groei.',
   },
 
-  // 12 ─ LEVEN LANG LEREN
+  // 11 ─ LEVEN LANG LEREN
   {
     id: 'levenlangleren',
     section: 'Leven lang leren',
@@ -235,7 +218,7 @@ export const SLIDES: Slide[] = [
     defenseImportance: 'Leeruitkomst 5. Sterk afsluiten met de rode draad.',
   },
 
-  // 13 ─ VRAGEN
+  // 12 ─ VRAGEN
   {
     id: 'vragen',
     section: 'Vragen',
